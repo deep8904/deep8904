@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Federation · Fedishare{% endblock %}
+{% block content %}
+<h1 class="text-3xl font-bold mb-3">Federation support</h1>
+<p class="text-zinc-300 mb-4">Fedishare includes a minimal ActivityPub/WebFinger implementation so accounts can be discovered from other fediverse services.</p>
+<ul class="list-disc pl-5 space-y-2 text-zinc-400">
+  <li>WebFinger: <code>/.well-known/webfinger?resource=acct:username@your-domain</code></li>
+  <li>Actor profile: <code>/u/username/actor</code></li>
+  <li>Outbox: <code>/u/username/outbox</code></li>
+  <li>Inbox endpoint: <code>/u/username/inbox</code> (MVP logging endpoint)</li>
+</ul>
+<p class="text-zinc-500 mt-4">For production federation, add HTTP Signatures verification, delivery workers, and object dereferencing.</p>
+{% endblock %}

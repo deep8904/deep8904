@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}@{{ profile_user.username }} · Fedishare{% endblock %}
+{% block content %}
+<section class="mb-8 flex flex-wrap items-end justify-between gap-4">
+  <div>
+    <h1 class="text-3xl font-bold">{{ profile_user.display_name }}</h1>
+    <p class="text-zinc-400">@{{ profile_user.username }}</p>
+    {% if profile_user.bio %}<p class="mt-2">{{ profile_user.bio }}</p>{% endif %}
+    <p class="mt-2 text-sm text-zinc-500">{{ followers_count }} followers · {{ following_count }} following</p>
+  </div>
+  {% if current_user and current_user.id != profile_user.id %}
+  <form method="post" action="/u/{{ profile_user.username }}/follow">
+    <button class="rounded px-4 py-2 {{ 'bg-zinc-700' if is_following else 'bg-violet-600' }}">
+      {{ 'Following' if is_following else 'Follow' }}
+    </button>
+  </form>
+  {% endif %}
+</section>
+
+<div class="masonry-grid">
+  {% for photo in photos %}
+  <article class="mb-4 break-inside-avoid rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800">
+    <img src="/media/{{ photo.image_path }}" alt="photo by {{ profile_user.username }}" class="w-full object-cover" loading="lazy"/>
+    {% if photo.caption %}<p class="p-3 text-sm text-zinc-300">{{ photo.caption }}</p>{% endif %}
+  </article>
+  {% else %}
+  <p class="text-zinc-400">No posts yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}

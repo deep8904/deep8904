@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Upload · Fedishare{% endblock %}
+{% block content %}
+<form method="post" action="/upload" enctype="multipart/form-data" class="max-w-lg mx-auto bg-zinc-900 border border-zinc-800 rounded-xl p-6 space-y-4">
+  <h1 class="text-2xl font-semibold">Share a photo</h1>
+  <input type="file" name="photo" accept="image/*" required class="w-full"/>
+  <textarea name="caption" rows="3" placeholder="Caption" class="w-full bg-zinc-950 border border-zinc-700 rounded px-3 py-2"></textarea>
+  <button class="w-full bg-violet-600 hover:bg-violet-500 rounded py-2">Publish</button>
+</form>
+{% endblock %}

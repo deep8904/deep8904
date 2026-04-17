@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Join · Fedishare{% endblock %}
+{% block content %}
+<form method="post" action="/register" class="max-w-md mx-auto bg-zinc-900 border border-zinc-800 rounded-xl p-6 space-y-4">
+  <h1 class="text-2xl font-semibold">Create account</h1>
+  <label class="block">Username
+    <input name="username" required class="mt-1 w-full bg-zinc-950 border border-zinc-700 rounded px-3 py-2" />
+  </label>
+  <label class="block">Display name
+    <input name="display_name" required class="mt-1 w-full bg-zinc-950 border border-zinc-700 rounded px-3 py-2" />
+  </label>
+  <label class="block">Password
+    <input type="password" name="password" required class="mt-1 w-full bg-zinc-950 border border-zinc-700 rounded px-3 py-2" />
+  </label>
+  <button class="w-full bg-violet-600 hover:bg-violet-500 rounded py-2">Join Fedishare</button>
+</form>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home · Fedishare{% endblock %}
+{% block content %}
+<section class="mb-8">
+  <h1 class="text-3xl font-bold">Chronological photo feed</h1>
+  <p class="text-zinc-400 mt-2">No opaque ranking algorithm—just photography from people you follow.</p>
+</section>
+
+<div class="masonry-grid">
+  {% for photo, owner in photos %}
+  <article class="mb-4 break-inside-avoid rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800">
+    <img src="/media/{{ photo.image_path }}" alt="photo by {{ owner.username }}" class="w-full object-cover" loading="lazy"/>
+    <div class="p-3 text-sm">
+      <a href="/u/{{ owner.username }}" class="font-medium hover:underline">{{ owner.display_name }}</a>
+      <span class="text-zinc-500">@{{ owner.username }}</span>
+      {% if photo.caption %}<p class="mt-1 text-zinc-300">{{ photo.caption }}</p>{% endif %}
+    </div>
+  </article>
+  {% else %}
+  <p class="text-zinc-400">No photos yet. {% if current_user %}Upload your first shot.{% else %}Join to start sharing.{% endif %}</p>
+  {% endfor %}
+</div>
+{% endblock %}
