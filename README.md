@@ -1,41 +1,86 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,100:1a1a2e&height=220&section=header&text=Hi%20There,%20I'm%20Deep%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=UI/UX%20Designer%20%7C%20Software%20Developer%20%7C%20Exploring%20AI%20Engineering&descAlignY=58&descSize=16" width="100%"/>
-
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=230&section=header&text=Deep%20Chadamiya&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=UI/UX%20Designer%20%C2%B7%20Software%20Developer%20%C2%B7%20Building%20toward%20AI%20Engineering&descAlignY=54&descSize=16" width="100%"/>
 
 <a href="https://github.com/deep8904">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Designing+clean%2C+usable+interfaces;Building+full-stack+products;Currently+diving+into+AI+%2F+LLM+engineering;Turning+ideas+into+shipped+products&font=Fira+Code&center=true&width=560&height=45&color=A78BFA&vCenter=true&size=22&pause=1200&duration=3000&repeat=true"/>
+  <img src="https://readme-typing-svg.demolab.com/?lines=I+design+the+interface%2C+then+build+the+engine+behind+it;Product+thinking+%E2%86%92+pixel-perfect+UI+%E2%86%92+working+code;Now+extending+that+into+AI%2FLLM+systems&font=Fira+Code&center=true&width=620&height=40&color=C9B6FF&vCenter=true&size=20&pause=1000&duration=2800&repeat=true"/>
 </a>
 
 </div>
 
 <br/>
 
-<table align="center">
+## 👋 Hey, I'm Deep
+
+I'm a **UI/UX designer and software developer** who ships the full loop —
+research, wireframes, design systems, and the production code that brings
+them to life. I don't hand off a Figma file and walk away; I build what I
+design, and I design with the constraints of what I'll build in mind.
+
+Right now I'm extending that same end-to-end approach into **AI engineering**
+— agentic systems, RAG pipelines, and multi-agent orchestration — treating
+model behavior as just another interface to design well.
+
+<br/>
+
+## 🧩 What I Build
+
+<br/>
+
+**🎬 CreatorFlow — SaaS Platform for Content Creators**
+A free platform for creators to manage brand sponsorships, content ideas,
+drafts, video repurposing, and analytics in one place.
+- Full UI redesign around a Swiss editorial / dark aesthetic — Geist Sans/Mono, WebGL dot-grid hero, asymmetric clip-path buttons
+- Built a token-governed design system (**Lexicon**) so color and component rules stay consistent across 13+ screens
+- Owned it end-to-end: competitive analysis → PRD with P0/P1/P2 scope → designer briefs → schema and integration decisions
+
+**🤖 Sentinel — Autonomous SRE Incident Intelligence (AI Engineering)**
+A multimodal, multi-agent system for detecting and reasoning about production incidents.
+- Whisper ASR + Qwen-VL for multimodal signal ingestion, BGE-M3 embeddings, Chronos for time-series forecasting
+- LangGraph-based multi-agent orchestration over a pgvector/Qdrant retrieval layer
+- Ragas-backed LLM-as-judge evaluation harness to keep the system honest, not just demo-ready
+
+**📺 Shibir Rundown App — Live Event Broadcast System**
+A broadcast-style cue and display system built for a real multi-day event
+(~240 cues across 6 sessions at BAPS Phoenix Temple).
+- Three linked, real-time-synced views: Green Room Display, AV/Prep Room Display, Stage Manager Control Panel
+- Single-file HTML front end served over a local-network Node.js server — zero external dependencies on event day
+- Designed for non-technical stage crew to run live, under time pressure, without errors
+
+<br/>
+
+## 🎨 Design × Engineering Toolkit
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=figma,ai,ps,xd,html,css,js,ts,react,nextjs,tailwind,nodejs,python,supabase,git,vercel&theme=dark" />
+</div>
+
+<table>
 <tr>
-<td width="60%" valign="top">
+<td valign="top" width="50%">
 
-### ✦ About Me
-
-I'm **Deep**, a UI/UX designer and software developer who likes owning a
-product end-to-end — from wireframe to shipped code. Lately I'm expanding
-into **AI engineering**, building agentic and RAG-based systems on top of
-solid product fundamentals.
-
-- 🎨 Design systems, motion, and interfaces that feel intentional
-- 🛠️ Full-stack development — product, design, and code in one loop
-- 🤖 Currently deep in multi-agent systems, RAG, and LLM tooling
-- 🌱 Building **CreatorFlow** — a free SaaS for creators to manage
-  sponsorships, content, and analytics
-- 📫 Reach me on GitHub — always open to collaborate
+**Design**
+Figma · Adobe XD/Illustrator/Photoshop · Design systems · Motion & micro-interactions · Wireframing → high-fidelity flows · Accessibility-aware UI
 
 </td>
-<td width="40%" valign="top">
+<td valign="top" width="50%">
 
-### ✦ GitHub Stats
+**Engineering**
+React / Next.js · TypeScript · Node.js · Tailwind · Supabase/Postgres · REST & realtime data flows
 
-<img src="https://github-readme-stats.vercel.app/api?username=deep8904&show_icons=true&hide_border=true&theme=tokyonight&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA&text_color=c9d1d9&ring_color=A78BFA" width="100%"/>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**AI / Currently Learning**
+LLM orchestration (LangGraph) · RAG (pgvector, Qdrant) · Multimodal pipelines (Whisper, Qwen-VL) · Eval harnesses (Ragas)
+
+</td>
+<td valign="top" width="50%">
+
+**Workflow**
+Figma-to-code handoff · v0 for rapid design exploration · Claude Code for implementation · Design tokens as the source of truth
 
 </td>
 </tr>
@@ -43,40 +88,18 @@ solid product fundamentals.
 
 <br/>
 
-<div align="center">
+## 🧭 How I Work
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=deep8904&theme=tokyonight&hide_border=true&background=0d1117&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deep8904&layout=compact&hide_border=true&theme=tokyonight&bg_color=0d1117&title_color=A78BFA&text_color=c9d1d9" width="38%"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-### ✦ Design & Dev Toolkit
-
-<img src="https://skillicons.dev/icons?i=figma,ai,ps,html,css,js,ts,react,nextjs,tailwind,nodejs,python,supabase,git,vercel,vscode&theme=dark" />
-
-</div>
+- Design and code are one discipline to me, not a handoff between two people
+- A system should be usable by the person under the most pressure, not just look good in a demo
+- I'd rather ship a smaller, coherent design system than a large inconsistent one
+- Learning AI engineering the same way I learned product work: by building real things, not just tutorials
 
 <br/>
 
-<div align="center">
-
-### ✦ Contribution Snake
-
-<img src="https://raw.githubusercontent.com/deep8904/deep8904/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-
-<sub>↑ animates automatically — set up via the GitHub Action in the notes below</sub>
-
-</div>
-
-<br/>
+## 🌍 Let's Connect
 
 <div align="center">
-
-### ✦ Let's Connect
 
 <a href="https://github.com/deep8904">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
@@ -90,6 +113,6 @@ solid product fundamentals.
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:0f0f0f&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
 
 </div>
